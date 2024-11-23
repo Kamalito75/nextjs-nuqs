@@ -3,6 +3,8 @@
 import { useQueryState, parseAsBoolean } from "nuqs";
 
 export const useCreateSessionModal = () => {
+
+  console.log("useCreateSessionModal");
   const [isOpen, setIsOpen] = useQueryState(
     "create-session",
     parseAsBoolean.withDefault(false)
